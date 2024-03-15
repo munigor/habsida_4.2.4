@@ -12,7 +12,7 @@ public class Solution {
         while ((ch = fin.read()) != -1) {
             if(Character.isDigit(ch)) {
                 number.append((char) ch);
-            } else if (number.isEmpty() && ((char) ch) == '-') {
+            } else if (number.isEmpty() && ch == '-') {
                 number.append((char) ch);
             } else if (!number.isEmpty()) {
                 sum += Integer.parseInt(number.toString());
